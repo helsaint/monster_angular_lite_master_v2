@@ -1,20 +1,15 @@
-// Importing express module
 const express = require('express');
+const path = require('path');
+
 const app = express();
 
-// Getting Request
-app.get('/', (req, res) => {
+// Serve only the static files form the dist directory
+app.use(express.static(__dirname + '/dist/rpg-monster-catalog'));
 
-	// Sending the response
-	res.send('Hello World!')
-	
-	// Ending the response
-	res.end()
-})
+app.get('/*', function(req,res) {
+    
+res.sendFile(path.join(__dirname+'/dist/rpg-monster-catalog/index.html'));
+});
 
-// Establishing the port
-const PORT = process.env.PORT ||5000;
-
-// Executing the server on given port number
-app.listen(PORT, console.log(
-'Server started on port ${PORT}'));
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 8080);
