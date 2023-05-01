@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node app.js",
     "dev": "nodemon app.js",
     "build": "ng build",
     "test": "ng test",
@@ -58,7 +58,7 @@
     "@types/datatables.net": "^1.10.22",
     "@types/jasmine": "~4.0.3",
     "@types/jasminewd2": "^2.0.10",
-    "@types/node": "^18.0.0",
+    "@types/node": "^18.16.3",
     "codelyzer": "^0.0.28",
     "jasmine-core": "~4.2.0",
     "jasmine-spec-reporter": "~7.0.0",
@@ -76,5 +76,9 @@
   },
   "peerDependencies": {
     "tslib": "1.10.0"
+  },
+  "engines": {
+    "node": "18.4.1",
+    "npm": "9.6.1"
   }
 }
