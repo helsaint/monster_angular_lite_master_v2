@@ -11,6 +11,38 @@ export const ROUTES: RouteInfo[] = [
     submenu: []
   },
   {
+    path: 'https://www.dashboard.aramotar.com/emissions',
+    title: 'Emissions DB',
+    icon: 'bi bi-bar-chart-steps',
+    class: '',
+    extralink: false,
+    submenu: []
+  },
+  {
+    path: 'https://tailwind-nodejs.herokuapp.com',
+    title: 'Vite/Tailwind',
+    icon: 'bi bi-bar-chart-fill',
+    class: '',
+    extralink: false,
+    submenu: []
+  },
+  {
+    path: 'https://dashboards.aramotar.com',
+    title: 'Black DB',
+    icon: 'bi bi-bar-chart-line-fill',
+    class: '',
+    extralink: false,
+    submenu: []
+  },
+  {
+    path: 'https://www.aramotar.com',
+    title: 'Blog',
+    icon: 'bi bi-blockquote-left',
+    class: '',
+    extralink: false,
+    submenu: []
+  },
+  {
     path: '/component/alert',
     title: 'Alert',
     icon: 'bi bi-bell',
