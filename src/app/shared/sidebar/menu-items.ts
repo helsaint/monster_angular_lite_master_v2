@@ -50,6 +50,7 @@ export const ROUTES: RouteInfo[] = [
     extralink: false,
     submenu: []
   },
+  /*
   {
     path: '/component/badges',
     title: 'Badges',
@@ -106,6 +107,7 @@ export const ROUTES: RouteInfo[] = [
     extralink: false,
     submenu: []
   },
+  */
   {
     path: '/about',
     title: 'About',
