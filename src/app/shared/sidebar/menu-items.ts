@@ -42,6 +42,7 @@ export const ROUTES: RouteInfo[] = [
     extralink: false,
     submenu: []
   },
+  /*
   {
     path: '/component/alert',
     title: 'Alert',
@@ -50,7 +51,6 @@ export const ROUTES: RouteInfo[] = [
     extralink: false,
     submenu: []
   },
-  /*
   {
     path: '/component/badges',
     title: 'Badges',

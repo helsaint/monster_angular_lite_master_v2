@@ -24,8 +24,6 @@ export class TopCardsComponent implements OnInit {
       let array_icons = ['bi bi-people', 'bi bi-heart', 'bi bi-wallet', 'bi bi-arrow-up',
     'bi bi-piggy-bank', 'bi bi-globe','bi bi-compass','bi bi-currency-euro', 
     'bi bi-compass','bi bi-currency-euro', 'bi bi-person','bi bi-currency-euro'];
-      let array_subtitle = ['# of players in dataset', 'Median Age', 'Median Wage', 
-      'Median Height', 'Median Weight', 'Mode Nationality']
       //for(let i =0 ; i < 4; i++){
       //  topcard_item = {bgcolor:array_bgcolor[i], 'icon': array_icons[i], 
       //  title:String(this.playerData['Median Age']), subtitle:array_subtitle[i]};
