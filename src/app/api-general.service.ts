@@ -20,6 +20,7 @@ export class ApiGeneralService {
   }
 
   getChoroplethData(){
-    return this.http.get("http://127.0.0.1:8000/sofifa_general_api/sofifa_choropleth_api");
+    //return this.http.get("http://127.0.0.1:8000/sofifa_general_api/sofifa_choropleth_api");
+    return this.http.get("https://dashboards.aramotar.com/sofifa_api/sofifa_choropleth_api");
   }
 }
