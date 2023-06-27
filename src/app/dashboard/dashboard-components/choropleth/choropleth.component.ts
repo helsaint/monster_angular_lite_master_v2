@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChoroplethComponent implements OnInit {
 
+  public graph = {
+    data: [{
+      type: 'choropleth',
+      locationmode: 'ISO-3',
+      locations: [],
+      z: []
+    }
+    ],
+    layout:{
+      geo:{
+        projection: { type: 'equirectangular' }
+      }
+    }
+  };
+
   constructor() { }
 
   ngOnInit(): void {
