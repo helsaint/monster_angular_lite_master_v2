@@ -18,8 +18,9 @@ export class ScatterplotComponent implements OnInit {
         type:'scatter'
       }
     ],
-    layout: {title: 'Scatter Plot of Wages against value',
-      xaxis: {text: "Daate"},
+    layout: {title: {text: 'Scatter Plot of Wages against value'},
+      xaxis: {title: {text: "Weekly Wages"}},
+      yaxis: {title: {text: "Sofifa Market Value"}},
       margin: {
         l: 50,
         r: 20,
