@@ -8,6 +8,10 @@ import { ApiGeneralService } from '../../../api-general.service';
 })
 export class ScatterplotComponent implements OnInit {
 
+  public temp(event:any){
+    console.log(event['points'][0]['text']);
+  }
+
   public graph = {
     data: [
       {
@@ -44,6 +48,7 @@ export class ScatterplotComponent implements OnInit {
       this.graph.data[0].y = this.playerData['value_eur'];
       this.graph.data[0].text = this.playerData['short_name'];
     })
+
     
   }
 
