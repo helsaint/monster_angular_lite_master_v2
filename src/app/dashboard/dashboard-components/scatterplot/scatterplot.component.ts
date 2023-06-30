@@ -8,8 +8,14 @@ import { ApiGeneralService } from '../../../api-general.service';
 })
 export class ScatterplotComponent implements OnInit {
 
-  public temp(event:any){
+  public expand_player(event:any){
+    let base_url = "";
+    let player_name = "";
     console.log(event['points'][0]['text']);
+    player_name = event['points'][0]['text'];
+    base_url = "http://127.0.0.1:8000/sofifa_general_api/sofifa_test/";
+    base_url = base_url.concat(player_name);
+    window.open(base_url);
   }
 
   public graph = {
