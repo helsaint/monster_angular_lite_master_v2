@@ -8,6 +8,11 @@ import { ApiGeneralService } from '../../../api-general.service';
 })
 export class ScatterplotComponent implements OnInit {
 
+  /** 
+   * expand_player opens a new indow (window.open()) to the Django application
+   * event['points] is data automatically provided through plotlyClick() in the
+   * html code.
+  */
   public expand_player(event:any){
     let base_url = "";
     let player_name = "";
