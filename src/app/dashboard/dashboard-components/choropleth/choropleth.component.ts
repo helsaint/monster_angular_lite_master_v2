@@ -8,6 +8,16 @@ import { ApiGeneralService } from '../../../api-general.service';
 })
 export class ChoroplethComponent implements OnInit {
 
+  public expand_country(event: any){
+    let base_url = "";
+    let country_code = "";
+    country_code = event['points'][0]['location'];
+    base_url = "https://dashboards.aramotar.com/sofifa_api/sofifa_country_detail/";
+    base_url = base_url.concat(country_code);
+    console.log(country_code);
+    window.open(base_url);
+  }
+
   public graph = {
     data: [{
       type: 'choropleth',

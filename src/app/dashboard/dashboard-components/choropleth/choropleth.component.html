@@ -1,5 +1,5 @@
 <div class="card">
     <div class="card-body">
-        <plotly-plot [data]="graph.data" [layout]="graph.layout"></plotly-plot>
+        <plotly-plot [data]="graph.data" [layout]="graph.layout" (plotlyClick)="(expand_country($event))"></plotly-plot>
     </div>
 </div>
