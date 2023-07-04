@@ -30,7 +30,10 @@ export class ScatterplotComponent implements OnInit {
         y: [],
         text: [],
         mode: 'markers',
-        type:'scatter'
+        type:'scatter',
+        marker:{
+          color: 'rgb(35, 193, 134)',
+        },
       }
     ],
     layout: {title: {text: 'Scatter Plot of Wages against value'},
